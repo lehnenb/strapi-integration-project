@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/voluntaries",
+      "handler": "Voluntary.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/voluntaries/count",
+      "handler": "Voluntary.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/voluntaries/:id",
+      "handler": "Voluntary.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/voluntaries",
+      "handler": "Voluntary.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/voluntaries/:id",
+      "handler": "Voluntary.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/voluntaries/:id",
+      "handler": "Voluntary.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
