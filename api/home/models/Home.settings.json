@@ -31,17 +31,10 @@
       "type": "string",
       "required": true
     },
-    "dates": {
-      "type": "json"
-    },
     "email": {
       "required": true,
       "unique": true,
       "type": "email"
-    },
-    "voluntaries": {
-      "collection": "voluntary",
-      "via": "home"
     }
   }
 }

@@ -35,13 +35,6 @@
     "description": {
       "type": "string",
       "required": true
-    },
-    "dates": {
-      "type": "json"
-    },
-    "home": {
-      "model": "home",
-      "via": "voluntaries"
     }
   }
 }
