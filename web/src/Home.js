@@ -7,6 +7,7 @@ import {
  Container,
  Segment,
  Divider,
+ List,
 } from 'semantic-ui-react';
 import CustomBreadcrumbs from './CustomBreadcrumbs'
 
@@ -18,18 +19,16 @@ function Home() {
       <Segment placeholder>
           <Header as='h2'>Regras de Inscrição</Header>
           <p>
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
-            ligula eget dolor. Aenean massa strong. Cum sociis natoque penatibus et
-            magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
-            ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa
-            quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget,
-            arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.
-            Nullam dictum felis eu pede link mollis pretium. Integer tincidunt. Cras
-            dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.
-            Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.
-            Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus
-            viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet.
-            Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi.
+            <p>
+            Para participar de programas de voluntariado com idosos
+            você terá que se cadastrar clicando no link <a href="/addVoluntary">Cadastro de Voluntário</a>.   
+            Feito isso, o adminstrador irá verificar seus dados e lhe encaminhar as opções que melhor se encaixam com o seu perfil.<br />
+            </p>
+            <p>
+            <b>A Escolha é feita a partir das habilidades e interesses descritos na carta de apresentação.
+               <br />
+               Com base nas informações apresentadas na carta, o administrador irá verificar as casas disponíveis no sistema e achar o programa que mais se encaixa com seu perfil.</b>
+            </p>
           </p>
       </Segment>
       </Container>
@@ -38,18 +37,17 @@ function Home() {
       <Segment placeholder>
           <Header as='h2'>Opções de voluntariado</Header>
           <p>
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
-            ligula eget dolor. Aenean massa strong. Cum sociis natoque penatibus et
-            magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
-            ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa
-            quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget,
-            arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.
-            Nullam dictum felis eu pede link mollis pretium. Integer tincidunt. Cras
-            dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.
-            Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.
-            Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus
-            viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet.
-            Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi.
+            As opções de voluntariado são informadas por cada casa de idosos internamente.
+            <p>
+            As seguintes opções são sugeridas para cada casa:
+            <br/>
+            <List>
+              <List.Item><b>Caminhada</b></List.Item>
+              <List.Item><b>Refeição</b></List.Item>
+              <List.Item><b>Visita</b></List.Item>
+              <List.Item><b>Jogos de Carate e Tabuleiro</b></List.Item>
+            </List>
+          </p>
           </p>
       </Segment>
       </Container>
