@@ -1,3 +1,4 @@
+
 .App {
   text-align: center;
 }
@@ -19,8 +20,38 @@
   color: white;
 }
 
+#root {
+  justify-content: center !important;
+}
+
+
 .App-link {
   color: #61dafb;
+}
+
+.breadcrumb {
+  margin-left: 17px !important;
+}
+
+#header {
+  padding: 15px;
+}
+
+#voluntary-form, #nursery-form {
+  margin-top:20px;
+  background: #f9fafb;
+  padding: 30px;
+  border-radius: 8px;
+}
+
+#voluntary-form .form .button {
+  background-color: #5FA8D3;
+  color: #fff;
+}
+
+#nursery-form .form .button {
+  background-color: #5FA8D3;
+  color: #fff;
 }
 
 @keyframes App-logo-spin {
@@ -30,4 +61,18 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+#rules {
+  margin-top: 20px;
+  width: 70%;
+}
+
+#options {
+  margin-top: 20px;
+  width: 70%;
+}
+
+.divider {
+  color: #ccc !important;
 }

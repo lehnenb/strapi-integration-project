@@ -6,27 +6,16 @@ import {
  Menu,
  Container,
  Segment,
+ Divider,
 } from 'semantic-ui-react';
+import CustomBreadcrumbs from './CustomBreadcrumbs'
 
 function Home() {
   return (
-    <div id="container">
-      <Header id="header" as='h1' divider='bool'>
-          Meu Velho Amigo 
-      </Header> 
-      <Menu>
-        <Menu.Item>
-          <Link to='/'>Home</Link>
-        </Menu.Item>
-        <Menu.Item>
-            <Link to='/addVoluntary'>Cadastrar Voluntário</Link>
-        </Menu.Item> 
-        <Menu.Item>
-            <Link to='/addHome'>Cadastrar Lar de Idosos</Link>
-        </Menu.Item>
-      </Menu>
+    <div id="content">
+      <CustomBreadcrumbs />
+      <Container id="rules">
       <Segment placeholder>
-        <Container id="rules">
           <Header as='h2'>Regras de Inscrição</Header>
           <p>
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
@@ -42,10 +31,11 @@ function Home() {
             viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet.
             Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi.
           </p>
-        </Container>
       </Segment>
+      </Container>
+      <Divider horizontal>---</Divider>
+      <Container id="options">
       <Segment placeholder>
-        <Container id="options">
           <Header as='h2'>Opções de voluntariado</Header>
           <p>
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
@@ -61,8 +51,8 @@ function Home() {
             viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet.
             Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi.
           </p>
-        </Container>
       </Segment>
+      </Container>
   </div>
   );
 }
